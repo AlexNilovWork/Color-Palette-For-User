@@ -26,18 +26,18 @@ const myPalette = new BootstrapColorPalette({
 });
 ```
 ### Настройки
-
-     const myPalette = new BootstrapColorPalette({
-      "selector" : string,
-      "dev": boolean,
-      "auto": boolean,
-      "type": string || object,
-      "func": function,
-      "palette": array,
-      "size": number
-     });
-
-####selector - Селектор DOM элемента для отображения палитры цветов (обязательный)
+```javascript
+const myPalette = new BootstrapColorPalette({
+"selector" : string,
+"dev": boolean,
+"auto": boolean,
+"type": string || object,
+"func": function,
+"palette": array,
+"size": number
+});
+```
+###selector - Селектор DOM элемента для отображения палитры цветов (обязательный)
 ####dev - в значение true отображает сообщения в консоли (по умолчанию true)
 ####auto (по умолчанию true)
 *true добавляет палитру цветов сразу после объявления new BootstrapColorPalette
