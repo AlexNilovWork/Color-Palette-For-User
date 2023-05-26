@@ -28,7 +28,7 @@ const myPalette = new BootstrapColorPalette({
 ### Настройки
 ```javascript
 const myPalette = new BootstrapColorPalette({
-  "selector" : string,
+	"selector" : string,
 	"dev": boolean,
 	"auto": boolean,
 	"type": string || object,
@@ -41,11 +41,11 @@ const myPalette = new BootstrapColorPalette({
 
 #### dev - в значение true отображает сообщения в консоли (по умолчанию true)
 #### auto (по умолчанию true)
-        *true добавляет палитру цветов сразу после объявления new BootstrapColorPalette
-        *false добавляет палитру цветов c помощью метода init() тогда когда вам это нужно
+* true добавляет палитру цветов сразу после объявления new BootstrapColorPalette
+* false добавляет палитру цветов c помощью метода init() тогда когда вам это нужно
 #### type (по умолчанию var)
-        *string: var | rgb | bg | text | btn | border | rgba | main
-        *object:
+* string: var | rgb | bg | text | btn | border | rgba | main
+* object:
 Вариант 1:
 ```javascript
 "type" : {
