@@ -371,8 +371,13 @@ export default class BootstrapColorPalette {
   }
   addMainInputs(obj, th = this){
     function addGradientInput(val, pos){
-      document.styleSheets[0].insertRule('.inp-grad.form-range { transform: rotate(90deg); position: absolute; width: 198px; top: 86px; left: -66px;} ',document.styleSheets[0].length);
-      document.styleSheets[0].insertRule('.inp-grad.form-range::-moz-range-track { background: linear-gradient(90deg,hsl(0, 100%, 50%),hsl(60, 100%, 50%),hsl(120, 100%, 50%),hsl(180, 100%, 50%),hsl(240, 100%, 50%),hsl(300, 100%, 50%),hsl(300, 100%, 50%)) }',document.styleSheets[0].length);
+      try {
+        document.styleSheets[0].insertRule(`.inp-grad.form-range::-moz-range-track { background: linear-gradient(90deg,hsl(0, 100%, 50%),hsl(60, 100%, 50%),hsl(120, 100%, 50%),hsl(180, 100%, 50%),hsl(240, 100%, 50%),hsl(300, 100%, 50%),hsl(300, 100%, 50%)) }`,document.styleSheets[0].length);
+      }
+      catch(e){
+        document.styleSheets[0].insertRule(`.inp-grad.form-range::-webkit-slider-runnable-track { background: linear-gradient(90deg,hsl(0, 100%, 50%),hsl(60, 100%, 50%),hsl(120, 100%, 50%),hsl(180, 100%, 50%),hsl(240, 100%, 50%),hsl(300, 100%, 50%),hsl(300, 100%, 50%)) }`,document.styleSheets[0].length);
+      }
+      document.styleSheets[0].insertRule(".inp-grad.form-range { transform: rotate(90deg); position: absolute; width: 198px; top: 86px; left: -66px }",document.styleSheets[0].length);
       let inp = `<input id="bcp-hue-inp" type="range" class="inp-grad form-range" data-pos="${pos}" min="0" max="360" step="1" value="${val}">`;
       return inp;
     }
