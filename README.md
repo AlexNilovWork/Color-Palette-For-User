@@ -78,20 +78,20 @@ const myPalette = new BootstrapColorPalette({
 #### func
   Функция которая будет выполняться после выбора/изменения цвета пользователем.
 В зависимости от type в функцию передаются разные аргументы:
-var - строка вида --bs-body-bg (имя css переменной или как определено в palette),
-rgb - строка вида --bs-body-bg-rgb (имя css переменной или как определено в palette),
-bg - строка вида bg-dark (имя class или как определено в palette),
-text - строка вида text-dark (имя class или как определено в palette),
-btn - строка вида btn-dark (имя class или как определено в palette),
-border - строка вида border-dark (имя class или как определено в palette),
-rgba - объект вида
+* var - строка вида --bs-body-bg (имя css переменной или как определено в palette),
+* rgb - строка вида --bs-body-bg-rgb (имя css переменной или как определено в palette),
+* bg - строка вида bg-dark (имя class или как определено в palette),
+* text - строка вида text-dark (имя class или как определено в palette),
+* btn - строка вида btn-dark (имя class или как определено в palette),
+* border - строка вида border-dark (имя class или как определено в palette),
+* rgba - объект вида
 ```javascript
 {
   "color": "--bs-info-rgb",
   "opacity": 1
 }
 ```
-main - массив вида
+* main - массив вида
 ```javascript
 [
   {
