@@ -22,19 +22,19 @@ JS
 ```javascript
 import BootstrapColorPalette from 'color-palette-for-users';
 const myPalette = new BootstrapColorPalette({
-  "selector" : "#example1"
+	"selector" : "#example1"
 });
 ```
 ### Настройки
 ```javascript
 const myPalette = new BootstrapColorPalette({
-"selector" : string,
-"dev": boolean,
-"auto": boolean,
-"type": string || object,
-"func": function,
-"palette": array,
-"size": number
+	"selector" : string,
+	"dev": boolean,
+	"auto": boolean,
+	"type": string || object,
+	"func": function,
+	"palette": array,
+	"size": number
 });
 ```
 ###selector - Селектор DOM элемента для отображения палитры цветов (обязательный)
